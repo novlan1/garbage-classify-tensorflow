@@ -1,0 +1,5 @@
+garbage_images/
+node_modules/
+dist/
+.cache
+output/weights.bin

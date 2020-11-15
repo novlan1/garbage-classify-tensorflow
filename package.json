@@ -1,0 +1,22 @@
+{
+  "name": "garbage-classify-tensorflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js",
+    "parcel": "parcel app/index.html",
+    "server": "hs output --cors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.7.0",
+    "@tensorflow/tfjs-node": "^2.7.0",
+    "http-server": "^0.12.3",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": ["last 1 Chrome version"]
+}
