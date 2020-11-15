@@ -1,2 +1,2 @@
-## 基于tensorFlowjs的垃圾分类
+## 基于tensorflowjs的垃圾分类
 
