@@ -6,8 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/main.js",
-    "parcel": "parcel app/index.html",
-    "build": "parcel build app/index.html",
     "server": "hs output --cors"
   },
   "keywords": [],
