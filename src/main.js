@@ -2,7 +2,7 @@ const getData = require("./loadData");
 const tf = require("@tensorflow/tfjs-node");
 
 const TRAIN_DIR = "garbage_images/train";
-const OUTPUT_DIR = "output";
+const OUTPUT_DIR = "app/output";
 const MOBILE_NET_URL =
   "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/pipcook/models/mobilenet/web_model/model.json";
 
@@ -61,7 +61,6 @@ const defineModel = async (classes) => {
  * 3. 使用tensorflow.js的save方法保存模型到文件
  */
 const trainModel = async (model, ds) => {
-
   model.compile({
     loss: "sparseCategoricalCrossentropy",
     optimizer: tf.train.adam(),
@@ -73,8 +72,8 @@ const trainModel = async (model, ds) => {
   // });
 
   await model.fitDataset(ds, {
-    epochs: 10, 
-  })
+    epochs: 10,
+  });
 
   await model.save(`file://${process.cwd()}/${OUTPUT_DIR}/`);
 };

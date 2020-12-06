@@ -26,7 +26,6 @@ const imgToX = (imgPath) => {
 
 // 分批次读取数据
 const batchReadData = async (data) => {
-
   const ds = tf.data.generator(function* () {
     const count = data.length;
     const batchSize = 32;
@@ -36,9 +35,9 @@ const batchReadData = async (data) => {
 
       yield tf.tidy(() => {
         // 存放图片
-        const inputs = []; 
+        const inputs = [];
         // 存放label
-        const labels = []; 
+        const labels = [];
 
         for (let j = i; j < end; j++) {
           const { imgPath, index } = data[j];
@@ -89,7 +88,7 @@ const getData = async (trainDir, outputDir) => {
   // 打乱数据
   tf.util.shuffle(data);
 
-// 分批次读取数据
+  // 分批次读取数据
   const ds = await batchReadData(data);
 
   return {
