@@ -2,7 +2,7 @@ const getData = require("./loadData");
 const tf = require("@tensorflow/tfjs-node");
 
 const TRAIN_DIR = "garbage_images/train";
-const OUTPUT_DIR = "app/output";
+const OUTPUT_DIR = "output";
 const MOBILE_NET_URL =
   "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/pipcook/models/mobilenet/web_model/model.json";
 

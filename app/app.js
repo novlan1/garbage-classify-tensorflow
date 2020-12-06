@@ -1,16 +1,13 @@
 import React from "react";
-import ReactDom from "react-dom";
 import { Button, Upload, message, Progress } from "antd";
 import "antd/dist/antd.css";
 import typeIntroObj from "./intro";
-import classesJSON from "./output/classes.json";
-import modelJSON from "./output/model.json";
+import classesJSON from "../output/classes.json";
 
-console.log(classesJSON);
 
 import * as tf from "@tensorflow/tfjs";
 
-const MODEL_DATA_URL = "http://127.0.0.1:8080/model.json";
+const MODEL_DATA_URL = 'http://model.uwayfly.com/model.json' // "http://127.0.0.1:8080/model.json";
 // const CLASSES_DATA_URL = "http://127.0.0.1:8080/classes.json";
 
 function getBase64(img, callback) {
@@ -205,4 +202,3 @@ class App extends React.PureComponent {
 
 export default App;
 
-ReactDom.render(<App />, document.getElementById("app"));
