@@ -7,7 +7,7 @@ import classesJSON from "./output/classes.json";
 
 import * as tf from "@tensorflow/tfjs";
 
-const MODEL_DATA_URL = 'https://github.com/novlan1/garbage-classify-tensorflow/tree/master/my-app/src/output/model.json'; // 'http://model.uwayfly.com/model.json' // "http://127.0.0.1:8080/model.json";
+const MODEL_DATA_URL = 'https://novlan1.github.io/garbage-classify-tensorflow/my-app/src/output/model.json' // 'https://github.com/novlan1/garbage-classify-tensorflow/tree/master/my-app/src/output/model.json'; // 'http://model.uwayfly.com/model.json' // "http://127.0.0.1:8080/model.json";
 // const CLASSES_DATA_URL = "http://127.0.0.1:8080/classes.json";
 
 function getBase64(img, callback) {
