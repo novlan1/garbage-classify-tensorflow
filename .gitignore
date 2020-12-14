@@ -3,3 +3,4 @@ node_modules/
 dist/
 .cache
 # output/weights.bin
+package-lock.json
